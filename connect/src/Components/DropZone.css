@@ -1,0 +1,46 @@
+.dropZone {
+    height: calc(var(--size) * 1.5);
+}
+
+.dropZone div {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dropZone .p1 {background-color: var(--p1);}
+
+.dropZone .p2 {background-color: var(--p2);}
+
+.dropZone .active {
+    transition: all ease-in-out 500;
+}
+
+.dropZone .active.column-0 {
+    margin-left: 0;
+}
+
+.dropZone .active.column-1 {
+    margin-left: 100px;
+}
+
+.dropZone .active.column-2 {
+    margin-left: 200px;
+}
+
+.dropZone .active.column-3 {
+    margin-left: 300px;
+}
+
+.dropZone .active.column-4 {
+    margin-left: 400px;
+}
+
+.dropZone .active.column-5 {
+    margin-left: 500px;
+}
+
+.dropZone .active.column-6 {
+    margin-left: 600px;
+}
