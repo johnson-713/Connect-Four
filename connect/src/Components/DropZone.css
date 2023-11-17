@@ -1,46 +1,82 @@
 .dropZone {
-    height: calc(var(--size) * 1.5);
+  height: calc(var(--size) * 1.5);
 }
 
 .dropZone div {
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
 }
 
-.dropZone .p1 {background-color: var(--p1);}
+.dropZone .p1 {
+  background-color: var(--p1);
+}
 
-.dropZone .p2 {background-color: var(--p2);}
+.dropZone .p2 {
+  background-color: var(--p2);
+}
 
 .dropZone .active {
-    transition: all ease-in-out 500;
+  transition: all ease-in-out 500;
 }
 
 .dropZone .active.column-0 {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .dropZone .active.column-1 {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .dropZone .active.column-2 {
-    margin-left: 200px;
+  margin-left: 200px;
 }
 
 .dropZone .active.column-3 {
-    margin-left: 300px;
+  margin-left: 300px;
 }
 
 .dropZone .active.column-4 {
-    margin-left: 400px;
+  margin-left: 400px;
 }
 
 .dropZone .active.column-5 {
-    margin-left: 500px;
+  margin-left: 500px;
 }
 
 .dropZone .active.column-6 {
-    margin-left: 600px;
+  margin-left: 600px;
 }
+
+.dropZone .active.row-0 {
+    transform: translateY(150px);
+  }
+  
+  .dropZone .active.row-1 {
+    transform: translateY(250px);
+  }
+  
+  .dropZone .active.row-2 {
+    transform: translateY(350px);
+  }
+  
+  .dropZone .active.row-3 {
+    transform: translateY(450px);
+  }
+  
+  .dropZone .active.row-4 {
+    transform: translateY(550px);
+  }
+  
+  .dropZone .active.row-5 {
+    transform: translateY(650px);
+  }
+  
+.dropZone .active.active.column--.row-- {transition: none;}
+
+.dropZone p {
+    display: grid;
+    place-content: center;
+}
+
